@@ -5,7 +5,6 @@
   justify-content: center;
   align-items: center;
   min-height: 100dvh;
-
   padding-block: abs.get-clamp(71px, 101px, abs.$bp-sm, abs.$bp-md);
   padding-inline: abs.get-clamp(24px, 159px, abs.$bp-sm, abs.$bp-md);
 }
@@ -21,4 +20,5 @@
   display: inherit;
   justify-content: inherit;
   align-items: inherit;
+  width: 100%;  
 }

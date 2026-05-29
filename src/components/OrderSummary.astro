@@ -1,0 +1,42 @@
+---
+import css from "./OrderSummary.module.scss";
+---
+
+<div class={`${css.container}`}>
+  <div class={`${css.card} text-preset-paragraph`}>
+    <img
+      src="/images/illustration-hero.svg"
+      alt=""
+      class={`${css.illustration}`}
+    />
+
+    <div class={`${css.content}`}>
+      <div class={`${css.info}`}>
+        <div>
+          <h2 class="text-preset-heading">Order Summary</h2>
+          <p>
+            You can now listen to millions of songs, audiobooks, and podcasts on
+            any device anywhere you like!
+          </p>
+        </div>
+
+        <div class={`${css.subscription}`}>
+          <div>
+            <img src="/images/icon-music.svg" alt="">
+            <div>
+              <div>Annual Plan</div>
+              <div>$59.99/year</div>
+            </div>
+          </div>
+
+          <a href="#" class="text-preset-change-link">Change</a>
+        </div>
+      </div>
+
+      <div class={`${css.buttons} text-preset-button`}>
+        <a href="#">Proceed to Payment</a>
+        <a href="#">Cancel Order</a>
+      </div>
+    </div>
+  </div>
+</div>

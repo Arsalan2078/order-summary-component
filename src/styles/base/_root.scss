@@ -21,8 +21,8 @@
   --fw-900: 900;
 
   // font-sizes
-  --fs-22-28: abs.get-clamp(22px, 28px, 327px, 450px, cqw);
-  --fs-15-16: abs.get-clamp(15px, 16px, 327px, 450px, cqw);
+  --fs-22-28: #{abs.get-clamp(22px, 28px, 327px, 450px, cqw)};
+  --fs-15-16: #{abs.get-clamp(15px, 16px, 327px, 450px, cqw)};
 
   // line-heights
   --lh-135: 1.35;

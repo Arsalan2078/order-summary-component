@@ -1,0 +1,115 @@
+@use "../styles/abstracts/z-index" as abs;
+
+.container {
+  container-type: inline-size;
+  width: min(100%, abs.to-rem(450px));
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border-radius: abs.to-rem(20px);
+  text-align: center;
+  box-shadow: 0 abs.to-rem(40px) abs.to-rem(40px) 0
+    rgb(from #0d30bd r g b / 0.1518);
+
+  a {
+    transition-property: background-color, color;
+    transition-timing-function: linear;
+    transition-duration: 0.15s;
+  }
+}
+
+.illustration {
+  display: block;
+  border-radius: inherit;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.content {
+  display: inherit;
+  flex-direction: inherit;
+  gap: abs.get-clamp(24px, 32px, 327px, 450px, cqw);
+  border-radius: inherit;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+  padding-top: abs.get-clamp(32px, 48px, 327px, 450px, cqw);
+  padding-bottom: abs.get-clamp(16px, 43px, 327px, 450px, cqw);
+  padding-inline: abs.get-clamp(24px, 48px, 327px, 450px, cqw);
+  background-color: var(--c-white);
+
+  h2 {
+    color: var(--c-blue-950);
+  }
+  p {
+    color: var(--c-gray-600);
+  }
+}
+
+.info {
+  display: inherit;
+  flex-direction: inherit;
+  gap: calc(abs.to-rem(24px) - abs.get-clamp(0px, 8px, 327px, 450px, cqw));
+
+  > div:first-child {
+    display: inherit;
+    flex-direction: inherit;
+    gap: abs.to-rem(16px);
+  }
+}
+
+.subscription {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: abs.get-clamp(16px, 24px, 327px, 450px, cqw);
+  background-color: var(--c-blue-050);
+
+  a {
+    color: var(--c-blue-700);
+  }
+  a:hover,
+  a:focus {
+    color: var(--c-purple-500);
+  }
+  > div {
+    display: inherit;
+    align-items: center;
+    gap: abs.to-rem(16px);
+  }
+  > div > div > div:first-child {
+    // subscription plan
+    color: var(--c-blue-950);
+    font-weight: var(--fw-900);
+  }
+}
+
+.buttons {
+  display: inherit;
+  flex-direction: inherit;
+  gap: abs.get-clamp(24px, 32px, 327px, 450px, cqw);
+
+  > a {
+    display: block;
+  }
+  > a:first-child {
+    border-radius: abs.to-rem(11px);
+    padding: abs.to-rem(12.5px);
+    background-color: var(--c-blue-700);
+    color: var(--c-white);
+    box-shadow: 0 abs.to-rem(20px) abs.to-rem(20px) 0
+      rgb(from #382ae1 r g b / 0.1903);
+  }
+  > a:first-child:hover,
+  > a:first-child:focus {
+    background-color: var(--c-purple-500);
+  }
+  > a:last-child {
+    color: var(--c-gray-600);
+  }
+  > a:last-child:hover,
+  > a:last-child:focus {
+    color: var(--c-blue-950);
+  }
+}
