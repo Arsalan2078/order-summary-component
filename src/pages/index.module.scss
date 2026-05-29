@@ -1,0 +1,24 @@
+@use "../styles/abstracts/z-index" as abs;
+
+.body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100dvh;
+
+  padding-block: abs.get-clamp(71px, 101px, abs.$bp-sm, abs.$bp-md);
+  padding-inline: abs.get-clamp(24px, 159px, abs.$bp-sm, abs.$bp-md);
+}
+.header {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.main {
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+}

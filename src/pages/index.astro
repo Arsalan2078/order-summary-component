@@ -1,5 +1,6 @@
 ---
 import "../styles/globals.scss";
+import css from "./index.module.scss";
 const websiteTitle = "Frontend Mentor | Order summary card";
 ---
 
@@ -11,9 +12,12 @@ const websiteTitle = "Frontend Mentor | Order summary card";
     <meta name="generator" content={Astro.generator} />
     <title>{websiteTitle}</title>
   </head>
-  <body>
-    <header>
+  <body class={`${css.body}`}>
+    <header class={`${css.header}`}>
       <h1>{websiteTitle}</h1>
     </header>
+    <main>
+      HELLO
+    </main>
   </body>
 </html>
