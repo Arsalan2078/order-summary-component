@@ -2,10 +2,39 @@
 
 :root {
   // colors
+  --c-white: #ffffff;
+  --c-black: #000000;
+  --c-gray-600: #717fa6;
+  --c-purple-500: #766cf1;
+  --c-blue-950: #1f2e55;
+  --c-blue-700: #382ae1;
+  --c-blue-150: #d6e1ff;
+  --c-blue-100: #e0e8ff;
+  --c-blue-050: #f7f9ff;
+
   // font-families
+  --ff-red-hat-display: "Red Hat Display", sans-serif;
+
   // font-weights
+  --fw-500: 500;
+  --fw-700: 700;
+  --fw-900: 900;
+
   // font-sizes
+  --fs-22-28: abs.get-clamp(22px, 28px, 327px, 450px, cqw);
+  --fs-15-16: abs.get-clamp(15px, 16px, 327px, 450px, cqw);
+
   // line-heights
+  --lh-135: 1.35;
+  --lh-165: 1.65;
+
   // letter-spacings
+  --ls-0: 0;
+
   // root styles
+  background: var(--c-blue-100) url("/images/pattern-background-desktop.svg")
+    center top / auto abs.get-clamp(194px, 437px, abs.$bp-sm, abs.$bp-md)
+    repeat-x;
+
+  font-family: var(--ff-red-hat-display);
 }
